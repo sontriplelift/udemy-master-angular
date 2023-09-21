@@ -7,6 +7,11 @@ import { Recipe } from './recipe.model';
   styleUrls: ['./recipes.component.css']
 })
 export class RecipesComponent {
+  selectedRecipe: Recipe;
 
+  changeSelectedRecipe(recipe: Recipe) {
+    this.selectedRecipe = recipe;
+    console.log('ccc', this.selectedRecipe)
+  }
 
 }
